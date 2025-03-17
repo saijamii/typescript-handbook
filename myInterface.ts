@@ -8,9 +8,19 @@ interface User {
   getCoupon(couponname: string, value: number): number;
 }
 
-const sai: User = {
+interface User {
+  githubToken: string;
+} // re opening of the Interface
+
+interface Admin extends User {
+  role: "admin" | "ta" | "learner";
+}
+
+const sai: Admin = {
+  role: "admin",
   email: "s@.com",
   id: 1,
+  githubToken: "test",
   dbId: 20,
   startTrail: () => {
     return "trail started";
@@ -22,3 +32,5 @@ const sai: User = {
 
 sai.email = "sai@gmail.com";
 // sai.dbId = 33;
+
+export {};
