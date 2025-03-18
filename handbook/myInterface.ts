@@ -22,3 +22,5 @@ const sai: User = {
 
 sai.email = "sai@gmail.com";
 // sai.dbId = 33;
+
+export {};

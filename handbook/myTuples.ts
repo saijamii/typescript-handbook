@@ -12,3 +12,5 @@ newUser[1] = "gt.com";
 newUser.push("2");
 newUser.push("5");
 newUser.push(5);
+
+export {}
