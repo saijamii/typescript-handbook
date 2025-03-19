@@ -12,13 +12,13 @@ function signUpUser(name, email, isPaid) { }
 //   if (myVal > 5) return true;
 //   return "200 OK"
 // }
-var getHello = function (name) {
+const getHello = (name) => {
     return "";
 };
-var heros = ["spiderman", "ironman", "thor"];
+const heros = ["spiderman", "ironman", "thor"];
 // const heros = [1, 2, 3];
-heros.map(function (hero) {
-    return "hero is ".concat(hero);
+heros.map((hero) => {
+    return `hero is ${hero}`;
 });
 // Does not return anything
 function consoleError(errorMessage) {
@@ -28,9 +28,7 @@ function consoleError(errorMessage) {
 function handleError(errorMessage) {
     throw new Error(errorMessage);
 }
-var loginUser = function (name, email, isPaid) {
-    if (isPaid === void 0) { isPaid = false; }
-};
+let loginUser = (name, email, isPaid = false) => { };
 loginUser("sai", "8888@gmail.com");
 signUpUser("sai", "8888", false);
 getUpper("test");

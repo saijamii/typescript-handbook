@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var score = 33;
+let score = 33;
 score = 44;
 score = "55";
-var saijami = {
+let saijami = {
     name: "saijami",
     id: 555,
 };
@@ -20,9 +20,9 @@ function getDbId(id) {
 getDbId(20);
 getDbId("2055");
 // Arrays
-var data = [1, 2, 3];
-var data2 = ["1", "2", "3"];
-var data3 = ["1", "2", "3", 1, 2, 3];
-var data4 = ["1", "2", "3", 1, 2, 3];
-var seatAllotment;
+const data = [1, 2, 3];
+const data2 = ["1", "2", "3"];
+const data3 = ["1", "2", "3", 1, 2, 3];
+const data4 = ["1", "2", "3", 1, 2, 3];
+let seatAllotment;
 seatAllotment = "window";

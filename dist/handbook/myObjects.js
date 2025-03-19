@@ -1,19 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var User = {
+const User = {
     name: "sai",
     email: "saijami38@gmail.com",
     isActive: true,
 };
-function createUser(_a) {
-    var string = _a.name, boolean = _a.isPaid;
-}
+function createUser({ name, isPaid }) { }
 createUser({
     name: "2",
     isPaid: true,
 });
-function createCourse(price) {
-    if (price === void 0) { price = 400; }
+function createCourse(price = 400) {
     return {
         name: "reactjs",
         price: 399,
@@ -31,7 +28,7 @@ createUserNew({
     email: "",
     isActive: false,
 });
-var myVendor = {
+let myVendor = {
     _id: "1234",
     name: "Vendor1",
     email: "H@h.com",

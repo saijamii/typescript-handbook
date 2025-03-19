@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var superHeros = [];
+const superHeros = [];
 // const heroPower: number[] = [];
-var heroPower = [];
-var allUsers = [];
-var MLMOdels = [
+const heroPower = [];
+const allUsers = [];
+const MLMOdels = [
     [255, 265, 255],
     // ["sdg"]
 ];
