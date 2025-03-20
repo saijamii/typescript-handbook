@@ -9,7 +9,8 @@
 // }
 
 class User {
-  private _courseCount = 1;
+  // private _courseCount = 1; // private key accessible within class
+  protected _courseCount = 1; // protected key can used in same class or Inhereted class
   readonly city: string = "";
   constructor(
     public email: string,
@@ -34,6 +35,13 @@ class User {
       throw new Error("Course count shold be more than 1");
     }
     this._courseCount = courseNum;
+  }
+}
+
+class SubUser extends User {
+  isFamily: boolean = true;
+  changesCourseCount() {
+    this._courseCount = 4;
   }
 }
 
