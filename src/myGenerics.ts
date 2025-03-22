@@ -25,9 +25,19 @@ interface Bottle {
   type: number;
 }
 
-
-
 identityFour<Bottle>({
-    brand: "B1",
-    type: 5
-})
+  brand: "B1",
+  type: 5,
+});
+
+function getProductsDetails<T>(products: T[]): T {
+  // data fetch
+  const myIndex = 3;
+  return products[myIndex];
+}
+
+const getMoreProductsDetails = <T>(products: T[]): T => {
+  // data fetch
+  const myIndex = 6;
+  return products[myIndex];
+};
