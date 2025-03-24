@@ -41,3 +41,41 @@ const getMoreProductsDetails = <T>(products: T[]): T => {
   const myIndex = 6;
   return products[myIndex];
 };
+
+interface Database {
+  connection: string;
+  userName: string;
+  password: string;
+}
+
+function anotherFunction<T, U extends Database>(valOne: T, valTwo: U): object {
+  console.log({ valOne, valTwo });
+  return {
+    valOne,
+    valTwo,
+  };
+}
+
+anotherFunction(3, {
+  connection: "cc",
+  userName: "user",
+  password: "1212",
+});
+
+interface Quiz {
+  name: string;
+  type: string;
+}
+
+interface Course {
+  name: string;
+  author: string;
+  subject: string;
+}
+
+class sellable<T> {
+  cart: T[] = [];
+  addToCart(product: T) {
+    this.cart.push(product);
+  }
+}
